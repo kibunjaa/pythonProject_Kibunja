@@ -5,7 +5,7 @@
 # Polymorphism
 # Encapsulation
 # Abstraction
-# self-used to reference class instances/ variables
+# self-used to reference class instances/ variable
 
 class Vehicles:
     def __init__(self, make, model, color):
@@ -21,9 +21,22 @@ class Trucks(Vehicles):
 Vehicles1 = Trucks("DAF", "XF", "Green")
 Vehicles1.SayCar()
 
-# Vehicle1 = Vehicles("Toyota", "TX", "Black")
-# print(Vehicle1.make)
-# print(Vehicle1.color)
-# print(Vehicle1.model)
+Vehicle1 = Vehicles("Toyota", "TX", "Black")
+print(Vehicle1.make)
+print(Vehicle1.color)
+print(Vehicle1.model)
 
-# Vehicle1.SayCar()
+Vehicle1.SayCar()
+
+class family:
+    def __init__(self, dad, mam, sister1, sister2, sister3, sister4):
+        self.dad = dad
+        self.mam = mam
+        self.sister1 = sister1
+        self.sister2 = sister2
+        self.sister3 = sister3
+        self.sister4 = sister4
+    def SayPeople(self):
+        print("The head of the family are", self.dad, self.mam, "and their first born is", self.sister1)
+        people1 = family("Kibunja", "Miriam", "Carolyne", "Franziska", "Zigrid", "Celline")
+        people1.SayPeople()

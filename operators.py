@@ -45,4 +45,4 @@ students = ["Hussein", "Assunta", "Brian"]
 print("Assunta" in students)
 print("Faith" not in students)
 
-# Operator  Precedence
+# Operator  Precedence.
